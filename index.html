@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Product store</title>
+<meta name="description" content="Get instant details, pricing and secure UPI ordering for this digital product.">
+<!-- Edit the 3 lines below once if you want WhatsApp / Facebook link previews to show your product (those apps do not run JavaScript). -->
+<meta property="og:type" content="product"><meta property="og:title" content="Product store"><meta property="og:description" content="Digital product. Pay with any UPI app.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b6b5c">
+<link rel="icon" href="icon-192.png">
+<script src="config.js"></script>
+<script>/* start loading product data immediately (before the page is parsed) */
+try{var _o=new URL(DKP_API).origin;["preconnect"].forEach(function(r){var l=document.createElement("link");l.rel=r;l.href=_o;document.head.appendChild(l);var m=document.createElement("link");m.rel=r;m.href="https://script.googleusercontent.com";m.crossOrigin="";document.head.appendChild(m)});
+window.__LP=fetch(DKP_API,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify({fn:"getLanding",args:[]})}).then(function(r){return r.json()}).catch(function(){return null})}catch(e){}</script>
+<link rel="stylesheet" href="landing.css"><link rel="stylesheet" href="ui/shiny-button.css">
+</head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol><symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></symbol><symbol id="i-circle-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></symbol><symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="i-zap" viewBox="0 0 24 24"><path d="M15.914 4a1.5 1.5 0 00-2.474-1.561l-9 9A1.5 1.5 0 005.5 14h4.002a.5.5 0 01.471.666L8.086 20a1.5 1.5 0 002.475 1.56l9-9A1.5 1.5 0 0018.5 10h-3.997a.5.5 0 01-.472-.667z"/></symbol><symbol id="i-smartphone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></symbol><symbol id="i-qr-code" viewBox="0 0 24 24"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></symbol><symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 15V3"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/></symbol><symbol id="i-file-text" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol><symbol id="i-star" viewBox="0 0 24 24"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></symbol><symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></symbol><symbol id="i-gift" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5"/><rect x="3" y="7" width="18" height="4" rx="1"/></symbol><symbol id="i-book-open" viewBox="0 0 24 24"><path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/></symbol><symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol><symbol id="i-trending-up" viewBox="0 0 24 24"><path d="M16 7h6v6"/><path d="m22 7-8.5 8.5-5-5L2 17"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></symbol><symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></symbol><symbol id="i-package" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></symbol><symbol id="i-rocket" viewBox="0 0 24 24"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"/><path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"/></symbol><symbol id="i-lightbulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol><symbol id="i-thumbs-up" viewBox="0 0 24 24"><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/><path d="M7 10v12"/></symbol><symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m16 9-5.5 5.5L8 12"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol><symbol id="i-play" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></symbol><symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol><symbol id="i-receipt" viewBox="0 0 24 24"><path d="M12 17V7"/><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"/><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"/></symbol><symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m17 8-5-5-5 5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></symbol><symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></symbol><symbol id="i-circle-play" viewBox="0 0 24 24"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/><circle cx="12" cy="12" r="10"/></symbol><symbol id="i-award" viewBox="0 0 24 24"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></symbol><symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol><symbol id="i-infinity" viewBox="0 0 24 24"><path d="M6 16c5 0 7-8 12-8a4 4 0 0 1 0 8c-5 0-7-8-12-8a4 4 0 1 0 0 8"/></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></symbol><symbol id="i-percent" viewBox="0 0 24 24"><line x1="19" x2="5" y1="5" y2="19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol><symbol id="i-life-buoy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></symbol><symbol id="i-refresh-cw" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol><symbol id="i-external-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol><symbol id="i-file-down" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M12 18v-6"/><path d="m9 15 3 3 3-3"/></symbol><symbol id="i-indian-rupee" viewBox="0 0 24 24"><path d="M6 3h12"/><path d="M6 8h12"/><path d="m6 13 8.5 8"/><path d="M6 13h3"/><path d="M9 13c6.667 0 6.667-10 0-10"/></symbol><symbol id="i-bell" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></symbol><symbol id="i-clipboard-list" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></symbol><symbol id="i-hourglass" viewBox="0 0 24 24"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol><symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 18V5"/><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"/><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"/><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"/><path d="M18 18a4 4 0 0 0 2-7.464"/><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"/><path d="M6 18a4 4 0 0 1-2-7.464"/><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"/></symbol><symbol id="i-chart-bar" viewBox="0 0 24 24"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 16h8"/><path d="M7 11h12"/><path d="M7 6h3"/></symbol><symbol id="i-pen-line" viewBox="0 0 24 24"><path d="M13 21h8"/><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></symbol><symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></symbol><symbol id="i-timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-maximize-2" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/><path d="M9 21H3v-6"/></symbol><symbol id="i-file-check" viewBox="0 0 24 24"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="m9 15 2 2 4-4"/></symbol><symbol id="i-circle-user-round" viewBox="0 0 24 24"><path d="M17.925 20.056a6 6 0 0 0-11.851.001"/><circle cx="12" cy="11" r="4"/><circle cx="12" cy="12" r="10"/></symbol><symbol id="i-scan-line" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></symbol><symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></symbol><symbol id="i-share-2" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></symbol></defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hd"><div class="w hd-in">
+ <a class="brandlink" href="#top"><img id="logoimg" alt="" hidden><b id="logo">Store</b></a>
+ <nav class="dn" id="dn" aria-label="Page sections"><a href="#benefits">Benefits</a><a href="#details">Details</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
+ <a class="btn sm" href="#buy" id="hbuy">Buy now</a>
+</div></header>
+<div class="w"><div id="ban" class="msg hide" role="status" aria-live="polite"></div></div>
+
+<main id="main">
+<div class="w state" id="state" role="status" aria-live="polite">
+ <div class="sk h"></div><div class="sk"></div><div class="sk s"></div><div class="sk b"></div>
+ <p id="stateMsg">Loading product...</p>
+ <button type="button" class="btn o hide" id="retry">Try again</button>
+</div>
+<noscript><div class="w state"><p>This page needs JavaScript to load the product. Please enable it and reload.</p></div></noscript>
+
+<div id="page" hidden>
+ <!-- HERO -->
+ <section class="hero" id="top" aria-labelledby="h1"><div class="w hero-in">
+  <div>
+   <p class="eyebrow" id="eyebrow"><svg class="ic" aria-hidden="true"><use href="#i-sparkles"/></svg><span></span></p>
+   <h1 id="h1"></h1>
+   <p class="lead" id="desc"></p>
+   <div class="pricebox"><span class="price" id="pr"></span><s id="op"></s><span class="off" id="disc"></span></div>
+   <p class="saveline" id="saveline"></p>
+   <div class="actions"><a class="btn shiny lg cta" id="heroCta" href="#buy"></a><div class="duo"><a class="btn o lg" href="#details" id="seeMore">See what&rsquo;s included</a><button type="button" class="btn g lg" id="shareBtn" aria-label="Share this product"><svg class="ic" aria-hidden="true"><use href="#i-share-2"/></svg>Share</button></div></div>
+   <p class="fine"><svg class="ic" aria-hidden="true"><use href="#i-smartphone"/></svg>Pay with any UPI app. Access link comes by WhatsApp and email.</p>
+  </div>
+  <div id="heroMedia"></div>
+ </div></section>
+
+ <!-- TRUST STRIP -->
+ <div class="strip"><div class="w"><ul id="trust"></ul></div></div>
+
+ <!-- PROBLEM -> SOLUTION -->
+ <section class="s" id="probsol" hidden aria-label="Problem and solution"><div class="w"><div class="ps" id="ps"></div></div></section>
+
+ <!-- BENEFITS -->
+ <section class="s alt" id="benefits" aria-labelledby="bh2"><div class="w"><div class="sh"><span class="kicker">Why you&rsquo;ll like it</span><h2 id="bh2">Benefits</h2></div><div class="grid" id="ben"></div></div></section>
+
+ <!-- DETAILS -->
+ <section class="s" id="details" aria-labelledby="dh2"><div class="w"><div class="sh"><span class="kicker">Product details</span><h2 id="dh2">Everything you get</h2></div>
+  <div class="det"><div class="card"><h3>What&rsquo;s included</h3><ul class="inc" id="inc"></ul><div class="rich" id="full" hidden></div></div>
+  <div class="card"><h3>At a glance</h3><dl class="spec" id="spec"></dl></div></div></div></section>
+
+ <!-- PREVIEW -->
+ <section class="s alt" id="prev" hidden aria-labelledby="ph2"><div class="w"><div class="sh"><span class="kicker">Preview</span><h2 id="ph2">Take a look inside</h2></div><div class="gal" id="gal"></div></div></section>
+
+ <!-- HOW IT WORKS -->
+ <section class="s" id="how" aria-labelledby="hw2"><div class="w"><div class="sh"><span class="kicker">Simple process</span><h2 id="hw2">How it works</h2></div><ol class="how" id="steps"></ol></div></section>
+
+ <!-- PURCHASE -->
+ <section class="s alt" id="buy" aria-labelledby="bh"><div class="w"><div class="sh"><span class="kicker">Order</span><h2 id="bh">Get access</h2></div>
+  <div class="buy">
+   <aside class="card sum" aria-label="Order summary">
+    <h3 id="sumT"></h3>
+    <div class="pricebox"><span class="price" id="pr2"></span><s id="op2"></s><span class="off" id="disc2"></span></div><p class="saveline" id="save2"></p>
+    <ul id="sumL"></ul>
+    <p class="note" id="sumN"></p>
+   </aside>
+   <div class="card" id="co">
+    <ol class="stp" id="stp" aria-label="Checkout progress"><li data-n="1" class="on" aria-current="step">Details</li><li data-n="2">Pay</li><li data-n="3">Receipt</li></ol>
+
+    <form id="f1"><input name="hp" class="hide" tabindex="-1" autocomplete="off" aria-hidden="true">
+     <div class="fld"><label for="fn">Full name</label><input id="fn" name="name" required maxlength="80" autocomplete="name"></div>
+     <div class="fld"><label for="fe">Email</label><input id="fe" name="email" type="email" required autocomplete="email" inputmode="email"><span class="help">Your access link is also sent here.</span></div>
+     <div class="fld"><label for="fm">WhatsApp / mobile number</label><input id="fm" name="mobile" type="tel" required pattern="[0-9+ ]{10,15}" autocomplete="tel" inputmode="tel" title="10 to 15 digits"><span class="help">Your access link is sent on WhatsApp.</span></div>
+     <button class="btn shiny lg blk cta" id="b1"></button>
+    </form>
+
+    <div id="payBox" class="pay hide">
+     <div><p class="lbl" id="ptitle"></p><p class="amt" id="amt"></p><span class="oid">Order <b id="oid"></b></span></div>
+     <div class="row ord"><a class="btn lg blk" id="upi" href="#"><svg class="ic" aria-hidden="true"><use href="#i-smartphone"/></svg>PAY NOW</a><span class="help">On your phone this opens your UPI app.</span></div>
+     <div class="qrw"><canvas id="qrc" width="240" height="240" role="img" aria-label="UPI payment QR code"></canvas></div>
+     <button type="button" class="btn g" id="dlqr"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download QR</button>
+     <ol class="pins"><li><i>1</i><span id="pins">Scan this QR with any UPI app and pay the exact amount.</span></li><li><i>2</i><span>Come back here and tap &ldquo;I have paid&rdquo;, then upload your receipt.</span></li><li><i>3</i><span>We verify it and send your access link on WhatsApp and email within 24 hours.</span></li></ol>
+     <button type="button" class="btn o hide" id="renew"><svg class="ic" aria-hidden="true"><use href="#i-refresh-cw"/></svg>Get new QR</button>
+     <button type="button" class="btn lg blk" id="paid"><svg class="ic" aria-hidden="true"><use href="#i-circle-check"/></svg>I have paid</button>
+     <form id="f2" class="f2 hide"><div class="fld"><label for="fs">Payment receipt or screenshot</label><input id="fs" type="file" name="shot" accept="image/jpeg,image/png,application/pdf" required><span class="help">JPG, PNG or PDF.</span></div>
+      <div class="fld"><label for="fu">UTR / transaction ID (optional)</label><input id="fu" name="utr" maxlength="30" autocomplete="off"></div><button class="btn lg blk">Submit payment proof</button></form>
+    </div>
+
+    <div id="done" class="donebox hide" role="status" aria-live="polite">
+     <span class="tile"><svg class="ic" aria-hidden="true"><use href="#i-hourglass"/></svg></span>
+     <h3 id="doneT">Waiting for payment confirmation...</h3><p id="doneP" style="color:var(--mut)"></p>
+     <div id="doneTl" style="width:100%;display:grid;justify-items:center"></div>
+     <div class="row two" style="display:grid;gap:10px;width:100%;max-width:420px"><button type="button" class="btn g" id="cpy"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copy order ID</button><a class="btn o" id="trk" href="track.html">Track order</a></div>
+    </div>
+
+    <div id="m1" class="msg hide" role="status" aria-live="polite"></div>
+
+    <details class="ord sep"><summary>Already ordered? Check your order status<svg class="ic" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary>
+     <form id="f3" style="margin-top:12px"><div class="fld"><label for="so">Order ID</label><input id="so" name="oid" required autocomplete="off" placeholder="DKS-20260101-001"></div>
+      <div class="fld"><label for="sm">Mobile number used for the order</label><input id="sm" name="mob" required inputmode="tel" autocomplete="tel"></div><button class="btn o">Check order status</button></form>
+     <div id="m3" class="msg hide"></div></details>
+   </div>
+  </div></div></section>
+
+ <!-- FAQ -->
+ <section class="s" id="faq" aria-labelledby="fq2"><div class="w"><div class="sh"><span class="kicker">Questions</span><h2 id="fq2">Frequently asked questions</h2></div><div class="faq" id="faqs"></div></div></section>
+
+ <!-- FINAL CTA -->
+ <section class="final" aria-labelledby="fh"><div class="w"><h2 id="fh">Ready to get started?</h2><p id="fp"></p><a class="btn inv lg cta" href="#buy"></a></div></section>
+
+ <!-- CONTACT -->
+ <section class="s" id="contact" aria-labelledby="ch"><div class="w"><div class="sh"><span class="kicker">Need help?</span><h2 id="ch">Contact us</h2><p>Questions before you buy? Send us a message.</p></div>
+  <form id="f4" class="contact"><input name="hp" class="hide" tabindex="-1" autocomplete="off" aria-hidden="true">
+   <div class="fld"><label for="cn">Name</label><input id="cn" name="name" required maxlength="80" autocomplete="name"></div>
+   <div class="fld"><label for="cm">WhatsApp number (optional)</label><input id="cm" name="mobile" type="tel" inputmode="tel" autocomplete="tel"></div>
+   <div class="fld"><label for="ce">Email</label><input id="ce" name="email" type="email" required autocomplete="email"></div>
+   <div class="fld"><label for="cx">Message</label><textarea id="cx" name="message" rows="4" required maxlength="1000"></textarea></div>
+   <button class="btn lg">Send message</button></form><div id="m4" class="msg hide" role="status" aria-live="polite"></div></div></section>
+</div>
+</main>
+
+<footer><div class="w" id="foot"></div></footer>
+<div id="tst" class="tst" role="status" aria-live="polite"></div>
+<div class="sbar" id="sbar" aria-hidden="true"><img id="sbI" alt="" hidden><div class="t"><b id="sbP"></b><span id="sbT"></span></div><a class="btn cta" href="#buy" tabindex="-1"></a></div>
+<dialog id="dlg"><h3>Payment proof received</h3><p>Your proof is submitted. As soon as your payment is verified, you will receive your access / download link on WhatsApp and email within 24 hours.</p><button class="btn" onclick="this.closest('dialog').close()">OK</button></dialog>
+<dialog class="lb" id="lb" aria-label="Preview image"><img id="lbi" alt=""><button type="button" class="btn inv" onclick="this.closest('dialog').close()">Close</button></dialog>
+
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])),safe=u=>/^https:\/\//.test(u||"")?u:"";
+let C=null,order=null,_qr;
+function loadQR(){if(typeof qrcode!=="undefined")return Promise.resolve();return _qr||(_qr=new Promise(res=>{const x=document.createElement("script");x.src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js";x.onload=res;x.onerror=()=>{_qr=null;res()};document.head.appendChild(x)}))}
+document.addEventListener("focusin",()=>loadQR(),{once:true});
+async function api(fn,...args){try{const r=await fetch(window.DKP_API,{method:"POST",headers:{"Content-Type":"text/plain"},body:JSON.stringify({fn,args})});return await r.json()}
+ catch(e){return{success:false,message:"Your request could not be completed. Please check your internet connection."}}}
+function show(el,t,c){el.textContent=t;el.className="msg "+(c||"")}
+function bn(t,c){const x=$("#ban");x.innerHTML=t;x.className="msg "+(c||"")}
+const save=o=>{try{localStorage.setItem("dks_order",JSON.stringify(o))}catch(e){}},load=()=>{try{return JSON.parse(localStorage.getItem("dks_order"))}catch(e){return null}},drop=()=>{try{localStorage.removeItem("dks_order")}catch(e){}};
+
+/* ---------- icons (Lucide, inline sprite) ---------- */
+const ICONS=new Set([...document.querySelectorAll("symbol[id^=i-]")].map(s=>s.id.slice(2)));
+const ic=(n,c)=>`<svg class="ic ${c||""}" aria-hidden="true"><use href="#i-${n}"/></svg>`;
+const ALIAS={tick:"check","✓":"check","✔":"check",bolt:"zap",fast:"zap",time:"clock",secure:"shield-check",safe:"shield-check",phone:"smartphone",mobile:"smartphone",support:"life-buoy",help:"life-buoy",money:"indian-rupee",rupee:"indian-rupee",price:"indian-rupee",book:"book-open",ebook:"book-open",video:"circle-play",update:"refresh-cw",updates:"refresh-cw",access:"infinity",lifetime:"infinity",bonus:"gift",templates:"layers",template:"layers",file:"file-text",pdf:"file-text",chart:"chart-bar",growth:"trending-up",idea:"lightbulb",learn:"graduation-cap",whatsapp:"message-circle",chat:"message-circle"};
+const DEF=["sparkles","target","zap","layers","lightbulb","trending-up","badge-check","rocket","star"];
+function tileIcon(raw,i){const k=String(raw||"").trim().toLowerCase().replace(/[\s_]+/g,"-"),n=ICONS.has(k)?k:(ALIAS[k]&&ICONS.has(ALIAS[k])?ALIAS[k]:"");
+ if(n)return ic(n);if(raw&&/[^\x00-\x7f]/.test(raw)&&String(raw).length<=4)return esc(raw);return ic(DEF[i%DEF.length])}
+
+/* ---------- order progress ---------- */
+function stage(d){return d.access==="APPROVED"?4:d.payment==="PAID"?3:d.payment==="RECEIPT_SUBMITTED"?2:1}
+const LABELS=["","PAYMENT PENDING","PAYMENT VERIFICATION PENDING","PAYMENT VERIFIED - ACCESS APPROVAL PENDING","ACCESS APPROVED"];
+function plabel(d){return d.payment==="REJECTED"?"Payment could not be verified. Please contact support.":LABELS[stage(d)]}
+function tl(d){if(d.payment==="REJECTED")return"";const c=stage(d);return'<ol class="tl" aria-label="Order progress">'+["Order placed","Payment","Verification","Access"].map((n,i)=>`<li class="${i<c?"ok":i===c?"on":""}">${n}</li>`).join("")+"</ol>"}
+function prog(d){return"<b>"+esc(plabel(d))+"</b>"+tl(d)}
+function setStep(n){document.querySelectorAll("#stp li").forEach((li,i)=>{li.classList.toggle("done",i+1<n);li.classList.toggle("on",i+1===n);if(i+1===n)li.setAttribute("aria-current","step");else li.removeAttribute("aria-current")});$("#stp").classList.toggle("hide",n>3)}
+function rich(t){const out=[];let ul=null;String(t||"").split(/\r?\n/).forEach(l=>{l=l.trim();if(!l){ul=null;return}const m=l.match(/^[-*\u2022]\s+(.*)/);if(m){if(!ul){ul=[];out.push(ul)}ul.push(m[1])}else{ul=null;out.push(l)}});
+ return out.map(x=>Array.isArray(x)?"<ul>"+x.map(i=>"<li>"+esc(i)+"</li>").join("")+"</ul>":"<p>"+esc(x)+"</p>").join("")}
+function luminance(h){const n=parseInt(h.slice(1),16),f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(n>>16&255)+.7152*f(n>>8&255)+.0722*f(n&255)}
+function setMeta(sel,attr,val){const e=document.querySelector(sel);if(e&&val)e.setAttribute(attr,val)}
+
+/* ---------- hero image gallery, share ---------- */
+function drawGallery(hm,imgs,title){let cur=0;
+ hm.innerHTML=`<div class="media img"><button type="button" class="zoom" id="mainBtn" aria-label="Enlarge image"><img id="mainImg" alt="${esc(title)}" src="${esc(imgs[0])}" fetchpriority="high" decoding="async"></button></div>`+(imgs.length>1?`<div class="thumbs" role="group" aria-label="Product images">${imgs.map((u,i)=>`<button type="button" data-i="${i}" class="${i?"":"on"}" aria-label="Show image ${i+1} of ${imgs.length}" aria-pressed="${i?"false":"true"}"><img loading="lazy" decoding="async" alt="" src="${esc(u)}"></button>`).join("")}</div>`:"");
+ const mi=hm.querySelector("#mainImg");hm.querySelector("#mainBtn").onclick=()=>{$("#lbi").src=imgs[cur];$("#lbi").alt=mi.alt;$("#lb").showModal()};
+ hm.querySelectorAll(".thumbs button").forEach(b=>b.onclick=()=>{cur=+b.dataset.i;mi.src=imgs[cur];mi.alt=title+" - image "+(cur+1);hm.querySelectorAll(".thumbs button").forEach(x=>{const on=x===b;x.classList.toggle("on",on);x.setAttribute("aria-pressed",on)})})}
+function tst(m){const e=$("#tst");e.textContent=m;e.classList.add("on");clearTimeout(tst.t);tst.t=setTimeout(()=>e.classList.remove("on"),2800)}
+$("#shareBtn").onclick=async()=>{const p=C.product,u=location.origin+location.pathname,t=p.title+" - \u20B9"+p.price;
+ if(navigator.share){try{await navigator.share({title:p.title,text:t,url:u})}catch(e){}return}
+ try{await navigator.clipboard.writeText(t+"\n"+u);tst("Link copied")}catch(e){tst("Copy this link: "+u)}};
+
+/* ---------- render ---------- */
+function render(){const p=C.product,L=C.landing,S=C.store,price=Number(p.price)||0,orig=Number(p.orig)||0,sv=orig>price?orig-price:0,off=sv?Math.round(sv/orig*100):0,
+ label=price?"Buy now \u2014 \u20B9"+price:"Buy now",R=document.documentElement.style;
+ if(S.brand){R.setProperty("--ac",S.brand);R.setProperty("--on-ac",luminance(S.brand)>.5?"#101828":"#fff");setMeta('meta[name=theme-color]',"content",S.brand)}
+ const lg=safe(S.logo);if(lg){$("#logoimg").src=lg;$("#logoimg").hidden=false}$("#logo").textContent=S.name||"Store";
+ /* SEO */
+ const desc=(p.short||("Buy "+p.title+" online. Pay with any UPI app.")).slice(0,160);document.title=p.title+(S.name?" | "+S.name:"");
+ setMeta("meta[name=description]","content",desc);setMeta("meta[property='og:title']","content",p.title);setMeta("meta[property='og:description']","content",desc);
+ if(safe(p.hero)){let m=document.querySelector("meta[property='og:image']");if(!m){m=document.createElement("meta");m.setAttribute("property","og:image");document.head.appendChild(m)}m.content=p.hero}
+ const old=document.getElementById("ldjson");if(old)old.remove();const ld=document.createElement("script");ld.id="ldjson";ld.type="application/ld+json";ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"Product",name:p.title,description:desc,...(safe(p.hero)?{image:p.hero}:{}),offers:{"@type":"Offer",price:price,priceCurrency:"INR",availability:"https://schema.org/InStock"}});document.head.appendChild(ld);
+ /* hero */
+ $("#eyebrow span").textContent=(p.format?p.format+" \u00B7 ":"")+"Digital product";
+ $("#h1").textContent=p.title;$("#desc").textContent=p.short||"";$("#desc").hidden=!p.short;
+ [["#pr","#op","#disc","#saveline"],["#pr2","#op2","#disc2","#save2"]].forEach(a=>{$(a[0]).textContent="\u20B9"+price;$(a[1]).textContent=sv?"\u20B9"+orig:"";$(a[1]).hidden=!sv;$(a[2]).textContent=off?off+"% off":"";$(a[2]).hidden=!off;$(a[3]).textContent=sv?"You save \u20B9"+sv:"";$(a[3]).hidden=!sv});
+ document.querySelectorAll(".cta").forEach(b=>{b.textContent=label});$("#hbuy").textContent="Buy now";
+ $("#bh").textContent="Get "+p.title;$("#sumT").textContent=p.title;
+ /* hero media */
+ const hm=$("#heroMedia"),img=safe(p.hero),im=safe(L.heroMobile),imgs=[img,...(p.gallery||[]).map(safe)].filter(Boolean),yt=String(L.youtube||"").match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})|^([\w-]{11})$/),id=yt&&(yt[1]||yt[2]);if(im&&img&&imgs[0]===img&&matchMedia("(max-width:700px)").matches)imgs[0]=im;
+ if(L.heroType==="YOUTUBE"&&id){hm.innerHTML=`<div class="media vid" id="media"><img alt="Video preview for ${esc(p.title)}" src="https://i.ytimg.com/vi/${id}/hqdefault.jpg"><button class="play" aria-label="Play video"><span>${ic("play")}</span></button></div>`;
+  const m=$("#media");m.querySelector("button").onclick=()=>{m.innerHTML=`<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" allow="autoplay;encrypted-media;fullscreen" allowfullscreen title="Product video"></iframe>`}}
+ else if(imgs.length)drawGallery(hm,imgs,p.title);
+ else{const top=(p.included||[]).slice(0,4);hm.innerHTML=`<div class="media"><div class="pcard"><div class="top"><span class="big">${ic("file-text")}</span><div><strong>${esc(p.title)}</strong></div></div><div class="chips">${[p.format,p.size,"Link sent after verification"].filter(Boolean).map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div>${top.length?`<ul>${top.map(x=>`<li>${ic("circle-check")}<span>${esc(x)}</span></li>`).join("")}</ul>`:""}</div></div>`}
+ /* trust */
+ const T=[["smartphone","Pay with any UPI app","Scan the QR or tap Pay now"],["message-circle","Access by WhatsApp & email","Sent after your payment is verified"],["badge-check","Payment checked by our team","Verification within 24 hours"]];
+ const ff=[p.format,p.size].filter(Boolean);if(ff.length)T.push(["file-text",ff.join(" \u00B7 "),"File details"]);else T.push(["receipt","Upload your receipt","Simple proof of payment"]);
+ $("#trust").innerHTML=T.map(t=>`<li>${ic(t[0])}<div><b>${esc(t[1])}</b><span>${esc(t[2])}</span></div></li>`).join("");
+ /* problem / solution */
+ const hp=L.problem.x,hs=L.solution.x;
+ if(hp||hs){$("#ps").className="ps"+(hp&&hs?" two":"");$("#ps").innerHTML=(hp?`<div class="card prob"><span class="tile bad">${ic("circle-alert")}</span><span class="kicker" style="color:var(--bad)">The problem</span><h2>${esc(L.problem.t||"The problem")}</h2><p>${esc(hp)}</p></div>`:"")+(hs?`<div class="card sol"><span class="tile">${ic("circle-check")}</span><span class="kicker">The solution</span><h2>${esc(L.solution.t||"The solution")}</h2><p>${esc(hs)}</p><a class="btn o" href="#buy">See how to get it${ic("arrow-right")}</a></div>`:"");}
+ $("#probsol").hidden=!(hp||hs);
+ /* benefits */
+ const bs=L.benefits.length?L.benefits:(p.features||[]).map(f=>({i:"check",h:f,d:""}));
+ if(bs.length)$("#ben").innerHTML=bs.map((b,i)=>`<div class="card feat"><span class="tile">${tileIcon(b.i,i)}</span><h3>${esc(b.h)}</h3>${b.d?`<p>${esc(b.d)}</p>`:""}</div>`).join("");$("#benefits").hidden=!bs.length;
+ /* details */
+ const inc=p.included||[];$("#inc").innerHTML=inc.map(x=>`<li>${ic("circle-check")}<span>${esc(x)}</span></li>`).join("")||`<li>${ic("circle-check")}<span>${esc(p.title)}</span></li>`;
+ $("#full").innerHTML=rich(p.full||"");$("#full").hidden=!p.full;
+ const e=L.support.email,w=String(L.support.wa||"").replace(/\D/g,""),sp=[];
+ if(p.format)sp.push(["Format",esc(p.format)]);if(p.size)sp.push(["File size",esc(p.size)]);
+ sp.push(["Price","\u20B9"+price+(sv?" (was \u20B9"+orig+")":"")]);sp.push(["Delivery","Access link on WhatsApp and email after payment is verified",1]);sp.push(["Payment","UPI (QR or app)"]);
+ if(e||w)sp.push(["Support",(e?`<a href="mailto:${esc(e)}">${esc(e)}</a>`:"")+(e&&w?"<br>":"")+(w?`<a href="https://wa.me/${w}" rel="noopener">WhatsApp</a>`:"")]);
+ if(L.terms)sp.push(["Refund & terms",esc(L.terms),1]);
+ $("#spec").innerHTML=sp.map(r=>`<div><dt>${r[0]}</dt><dd class="${r[2]?"n":""}">${r[1]}</dd></div>`).join("");
+ /* summary card */
+ $("#sumL").innerHTML=(inc.slice(0,4).map(x=>`<li>${ic("check")}<span>${esc(x)}</span></li>`).join(""))+`<li>${ic("smartphone")}<span>Pay by UPI</span></li><li>${ic("message-circle")}<span>Access link on WhatsApp &amp; email</span></li>`;
+ $("#sumN").textContent="Your access link is sent after your payment is verified, within 24 hours.";
+ /* gallery */
+ const g=(p.gallery||[]).map(safe).filter(Boolean);if(g.length){$("#gal").innerHTML=g.map((u,i)=>`<button type="button" data-i="${i}" aria-label="Enlarge preview ${i+1}"><img loading="lazy" decoding="async" alt="${esc(p.title)} preview ${i+1}" src="${esc(u)}"></button>`).join("");}$("#prev").hidden=!g.length;if(g.length){
+  $("#gal").onclick=ev=>{const b=ev.target.closest("button");if(!b)return;$("#lbi").src=g[b.dataset.i];$("#lbi").alt=b.querySelector("img").alt;$("#lb").showModal()}}
+ if(!(L.heroType==="YOUTUBE"&&id)&&imgs.length>1)$("#prev").hidden=true;   /* thumbnails already show the gallery at the top */
+ const si=$("#sbI");if(imgs.length){si.src=imgs[0];si.hidden=false}else si.hidden=true;
+ /* how it works: admin steps, else the real flow */
+ const st=(L.steps&&L.steps.length)?L.steps:["Enter your details","Pay with any UPI app","Upload your payment receipt","We verify your payment","Receive your access link on WhatsApp and email"];
+ $("#steps").innerHTML=st.map(x=>`<li><span>${esc(x)}</span></li>`).join("");
+ /* FAQ: admin FAQs first, then answers drawn from how this store actually works */
+ const F=(p.faq||[]).map(x=>({q:x.q||x[0],a:x.a||x[1]})).filter(x=>x.q);
+ F.push({q:"What do I get after paying?",a:"Once your payment is verified, your access link is sent to you on WhatsApp and email within 24 hours."},{q:"How do I pay?",a:"Enter your details, then pay the exact amount with any UPI app by scanning the QR or tapping Pay now. After paying, upload your receipt so we can verify it."},{q:"How can I check my order?",a:"Open \u201CAlready ordered?\u201D in the order section and enter your Order ID and mobile number, or use the Track order page."});
+ if(L.terms)F.push({q:"What is the refund policy?",a:L.terms});
+ $("#faqs").innerHTML=F.map(x=>`<details><summary>${esc(x.q)}${ic("chevron-down")}</summary><div class="a">${esc(x.a)}</div></details>`).join("");
+ $("#fp").textContent=(p.short||p.title)+" Pay with any UPI app and get your access link within 24 hours of verification.";
+ /* footer + nav */
+ $("#foot").innerHTML=`<div><b>${esc(S.name||"")}</b></div>`+(L.terms?`<div>${esc(L.terms)}</div>`:"")+`<div>Support: ${e?`<a href="mailto:${esc(e)}">${esc(e)}</a>`:""}${e&&w?" \u00B7 ":""}${w?`<a href="https://wa.me/${w}" rel="noopener">WhatsApp</a>`:""}${!e&&!w?"use the contact form above":""} \u00B7 <a href="track.html">Track order</a></div>`;
+ document.querySelectorAll("#dn a").forEach(a=>{const t=document.querySelector(a.getAttribute("href"));a.hidden=!t||t.hidden});
+ $("#sbP").textContent="\u20B9"+price;$("#sbT").textContent=p.title;
+ $("#state").hidden=true;$("#page").hidden=false;watchCta();(window.requestIdleCallback||setTimeout)(loadQR);
+}
+/* sticky mobile CTA: only after the hero button scrolls away, never over the order section */
+function watchCta(){if(watchCta.done||!("IntersectionObserver"in window))return;watchCta.done=1;const bar=$("#sbar"),vis={h:true,b:false};
+ const upd=()=>{const on=!vis.h&&!vis.b;bar.classList.toggle("on",on);bar.setAttribute("aria-hidden",on?"false":"true");bar.querySelector("a").tabIndex=on?0:-1;document.body.classList.toggle("has-sbar",on)};
+ const o=new IntersectionObserver(es=>{es.forEach(e=>{vis[e.target.id==="heroCta"?"h":"b"]=e.isIntersecting});upd()},{threshold:.01});o.observe($("#heroCta"));o.observe($("#buy"))}
+
+/* ---------- payment (unchanged logic) ---------- */
+function drawQR(x,t,px,py,s){if(typeof qrcode==="undefined")return;const q=qrcode(0,"M");q.addData(t);q.make();
+ const n=q.getModuleCount(),m=Math.max(2,Math.floor(s/(n+8))),o=Math.floor((s-m*(n+8))/2);x.fillStyle="#fff";x.fillRect(px,py,s,s);x.fillStyle="#000";
+ for(let r=0;r<n;r++)for(let k=0;k<n;k++)if(q.isDark(r,k))x.fillRect(px+o+(k+4)*m,py+o+(r+4)*m,m,m)}
+const upiUri=o=>"upi://pay?pa="+encodeURIComponent(o.upiId)+"&pn="+encodeURIComponent(o.upiName||o.store||"")+"&am="+o.total+"&cu=INR&tn="+encodeURIComponent(o.orderId);
+function showPay(o){order=o;const u=upiUri(o);$("#ptitle").textContent=o.title;$("#oid").textContent=o.orderId;$("#amt").textContent="\u20B9"+o.total;$("#upi").href=u;
+ loadQR().then(()=>drawQR($("#qrc").getContext("2d"),u,0,0,240));$("#pins").textContent="Scan this QR with any UPI app and pay the exact amount of \u20B9"+o.total+".";
+ const ex=Number(o.expires)&&Number(o.expires)<Date.now();$("#renew").classList.toggle("hide",!ex);if(ex)show($("#m1"),"This payment session expired. Tap Get new QR (the price is checked again).","");
+ $("#f1").classList.add("hide");$("#done").classList.add("hide");$("#payBox").classList.remove("hide");setStep(2)}
+function wrap(x,t,cx,y,mw,lh){let l="";for(const w of String(t).split(" ")){const n=l?l+" "+w:w;if(l&&x.measureText(n).width>mw){x.fillText(l,cx,y);y+=lh;l=w}else l=n}x.fillText(l,cx,y);return y+lh}
+function card(o){const AC=(C&&C.store&&C.store.brand)||"#0b6b5c",W=720,H=1060,c=document.createElement("canvas");c.width=W;c.height=H;const x=c.getContext("2d");
+ x.fillStyle="#fff";x.fillRect(0,0,W,H);x.fillStyle=AC;x.fillRect(0,0,W,16);x.textAlign="center";
+ x.fillStyle="#1d2433";x.font="700 40px Georgia,serif";let y=wrap(x,o.title,W/2,100,640,50);
+ x.font="600 30px 'Segoe UI',Arial,sans-serif";y=wrap(x,o.name,W/2,y+16,640,38);
+ x.fillStyle="#5d6677";x.font="400 26px 'Segoe UI',Arial,sans-serif";y=wrap(x,o.email||"",W/2,y,640,34);x.fillText("Order "+o.orderId,W/2,y+6);
+ x.fillStyle=AC;x.font="800 72px 'Segoe UI',Arial,sans-serif";x.fillText("\u20B9"+o.total,W/2,y+104);drawQR(x,upiUri(o),130,y+150,460);
+ x.fillStyle="#5d6677";x.font="400 24px 'Segoe UI',Arial,sans-serif";x.fillText("Scan with any UPI app and pay the exact amount",W/2,y+660);return c}
+async function checkFile(f){if(!f||!f.size)return"Please choose your payment receipt.";if(f.size>4e6&&!/^image/.test(f.type))return"File is too large (max 4 MB).";if(f.size>12e6)return"File is too large.";
+ const b=new Uint8Array(await f.slice(0,8).arrayBuffer()),jpg=b[0]==255&&b[1]==216&&b[2]==255,png=b[0]==137&&b[1]==80&&b[2]==78&&b[3]==71,pdf=b[0]==37&&b[1]==80&&b[2]==68&&b[3]==70;
+ return jpg||png||pdf?"":"Only JPG, PNG or PDF files are allowed."}
+const b64=f=>new Promise(r=>{const x=new FileReader;x.onload=()=>r(String(x.result).split(",")[1]||"");x.onerror=()=>r("");x.readAsDataURL(f)});
+function shrink(file){return new Promise(res=>{const im=new Image(),u=URL.createObjectURL(file);im.onload=()=>{if(im.width<200||im.height<200){URL.revokeObjectURL(u);return res("")}
+ const k=Math.min(1,1100/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*k;c.height=im.height*k;c.getContext("2d").drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);res(c.toDataURL("image/jpeg",.7).split(",")[1])};im.onerror=()=>res("");im.src=u})}
+function showDone(id,d){$("#payBox").classList.add("hide");$("#f1").classList.add("hide");const done=$("#done");done.classList.remove("hide");
+ $("#doneT").textContent=d&&d.access==="APPROVED"?"Access approved":d&&d.payment==="PAID"?"Payment verified. Access approval pending":"Waiting for payment confirmation...";
+ $("#doneP").textContent="Order "+id+(d?"":". We have your receipt and will verify it soon.");$("#doneTl").innerHTML=d?tl(d):tl({payment:"RECEIPT_SUBMITTED"});
+ $("#trk").href="track.html?track="+encodeURIComponent(id);$("#cpy").onclick=async()=>{try{await navigator.clipboard.writeText(id);$("#cpy").lastChild.textContent="Copied"}catch(e){$("#cpy").lastChild.textContent=id}};setStep(4)}
+$("#f1").onsubmit=async e=>{e.preventDefault();const b=$("#b1"),m=$("#m1"),f=Object.fromEntries(new FormData(e.target)),txt=b.textContent;b.disabled=true;b.textContent="Creating payment...";
+ if(f.hp){b.disabled=false;b.textContent=txt;return}
+ const rid=(crypto.randomUUID?crypto.randomUUID():Date.now()+"-"+Math.random().toString(36).slice(2)+"-dks").replace(/[^\w-]/g,"");
+ const r=await api("createOrder",{reqId:rid,productId:C.product.id,qty:1,name:f.name,mobile:f.mobile,email:f.email});b.disabled=false;b.textContent=txt;
+ if(!r.success)return show(m,r.message||"We could not create the payment request. Please try again.","err");
+ const o={...r.data,reqId:rid,mobile:f.mobile,email:f.email,title:r.data.title||C.product.title};save(o);showPay(o);if(r.message)show(m,r.message,"");else m.className="msg hide";$("#co").scrollIntoView({behavior:"smooth",block:"start"})};
+$("#renew").onclick=async()=>{const r=await api("renewSession",order.orderId,order.reqId);if(!r.success)return show($("#m1"),r.message||"Could not renew. Please try again.","err");const o={...order,...r.data};save(o);showPay(o);$("#m1").className="msg hide"};
+$("#dlqr").onclick=()=>{card(order).toBlob(b=>{const a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=order.orderId+"-payment-qr.png";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),4000)},"image/png")};
+$("#paid").onclick=()=>{$("#paid").classList.add("hide");$("#f2").classList.remove("hide");setStep(3);$("#f2").scrollIntoView({behavior:"smooth",block:"center"})};
+$("#f2").onsubmit=async e=>{e.preventDefault();const m=$("#m1"),b=e.target.querySelector("button"),f=Object.fromEntries(new FormData(e.target)),file=f.shot,bad=await checkFile(file);if(bad)return show(m,bad,"err");
+ b.disabled=true;b.textContent="Uploading...";const pdf=file.type==="application/pdf",data=pdf?await b64(file):await shrink(file);
+ if(!data){b.disabled=false;b.textContent="Submit payment proof";return show(m,"This is not a valid receipt file. Please choose a clear screenshot, photo or PDF.","err")}
+ const r=await api("submitPayment",{orderId:order.orderId,reqId:order.reqId,total:order.total,mime:pdf?"application/pdf":"image/jpeg",base64:data,utr:f.utr||""});b.disabled=false;b.textContent="Submit payment proof";
+ if(!r.success)return show(m,r.message||"Could not submit. Please try again.","err");
+ save({...order,sub:1});e.target.reset();show(m,"Payment details received. Verification is pending. Order "+order.orderId,"ok");showDone(order.orderId);$("#dlg").showModal()};
+$("#f3").onsubmit=async e=>{e.preventDefault();const f=Object.fromEntries(new FormData(e.target)),m=$("#m3"),r=await api("getOrderStatus",f.oid.trim(),f.mob.trim());
+ if(!r.success)return show(m,r.message||"Order not found.","err");m.innerHTML=prog(r.data);m.className="msg ok";
+ if(r.data.access==="APPROVED"){const z=await api("getDownload",f.oid.trim(),f.mob.trim());if(z.success&&safe(z.data.url))m.innerHTML+=`<p style="margin-top:12px"><a class="btn" rel="noopener" href="${esc(z.data.url)}">ACCESS PRODUCT</a></p>`}};
+$("#f4").onsubmit=async e=>{e.preventDefault();const r=await api("submitContact",Object.fromEntries(new FormData(e.target)));show($("#m4"),r.success?r.message:(r.message||"Could not send. Please try again."),r.success?"ok":"err");if(r.success)e.target.reset()};
+async function restore(){const o=load();if(!o||!o.orderId)return;const r=await api("getOrderStatus",o.orderId,o.mobile);
+ if(!r.success){if(/not found|invalid/i.test(r.message||""))drop();return}
+ const d=r.data,id=esc(o.orderId);
+ if(d.payment==="PAYMENT_PENDING"){showPay(o);$("#paid").classList.add("hide");$("#f2").classList.remove("hide");setStep(3);bn(`Order <b>${id}</b> is waiting for your payment proof. <a href="#co">Upload receipt</a>`)}
+ else if(d.access==="APPROVED"){drop();bn(`Order <b>${id}</b>: access approved. <a href="track.html?track=${id}">Open your access</a>`,"ok")}
+ else if(d.payment==="REJECTED"||d.payment==="CANCELLED"){drop();bn(`Order <b>${id}</b>: we could not verify your payment. Please contact support.`,"err")}
+ else{showDone(o.orderId,d);bn(`Order <b>${id}</b>: ${esc(plabel(d))}. Your link arrives on WhatsApp and email within 24 hours of verification.`,"ok")}}
+
+/* ---------- boot ---------- */
+function fail(msg,retry){$("#state").querySelectorAll(".sk").forEach(s=>s.hidden=true);$("#stateMsg").textContent=msg;$("#retry").classList.toggle("hide",!retry)}
+const CK="dkp_landing_v1";
+async function boot(){$("#state").querySelectorAll(".sk").forEach(s=>s.hidden=false);$("#stateMsg").textContent="Loading product...";$("#retry").classList.add("hide");
+ if(!window.DKP_API||/PASTE/.test(window.DKP_API))return fail("Store is not configured yet (set DKP_API in config.js).",false);
+ let cached=null,shown=false,restored=false;const once=()=>{if(!restored){restored=true;restore()}};
+ try{cached=JSON.parse(localStorage.getItem(CK))}catch(e){}
+ if(cached&&cached.product&&cached.landing&&cached.store){C=cached;render();shown=true;once()}   /* repeat visit: page appears instantly */
+ let r=window.__LP?await window.__LP:null;window.__LP=null;if(!r)r=await api("getLanding");
+ if(!r.success){if(!shown)fail(r.message&&!/connection/i.test(r.message)?r.message:"Unable to load product. Please try again.",true);return}
+ const fresh=JSON.stringify(r.data);try{localStorage.setItem(CK,fresh)}catch(e){}
+ if(!shown||fresh!==JSON.stringify(cached)){C=r.data;render()}
+ once()}
+$("#retry").onclick=boot;boot();
+if("serviceWorker"in navigator)navigator.serviceWorker.register("service-worker.js");
+</script></body></html>

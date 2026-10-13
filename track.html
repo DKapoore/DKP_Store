@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Track your order</title><meta name="robots" content="noindex"><meta name="description" content="Check the payment and access status of your order.">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b6b5c"><link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="landing.css">
+<style>main.t{max-width:520px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 56px}main.t h1{font-size:1.75rem;margin:0 0 6px}.sub{color:var(--mut);margin-bottom:22px}
+.res{margin-top:18px;display:grid;gap:12px}.res .card{padding:18px}.res h2{font-size:1.1rem}.lbl2{font-weight:800;font-size:.95rem;letter-spacing:.01em;margin:6px 0 4px}
+.tlv{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:0}.tlv li{position:relative;padding:0 0 18px 34px;color:var(--mut2);font-size:.95rem;min-height:30px}.tlv li:last-child{padding-bottom:0}
+.tlv li::before{content:"";position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;border:2px solid var(--line);background:var(--surface)}
+.tlv li::after{content:"";position:absolute;left:10px;top:26px;bottom:-2px;width:2px;background:var(--line)}.tlv li:last-child::after{display:none}
+.tlv li.ok{color:var(--ink)}.tlv li.ok::before{background:var(--ok);border-color:var(--ok);content:"\2713";color:#fff;font-size:.75rem;font-weight:800;display:grid;place-items:center}.tlv li.ok::after{background:var(--ok)}
+.tlv li.on{color:var(--ink);font-weight:700}.tlv li.on::before{border-color:var(--ac);background:var(--ac);box-shadow:0 0 0 4px color-mix(in srgb,var(--ac) 22%,transparent)}
+.back{display:inline-block;margin-bottom:18px;font-weight:600;text-decoration:none}</style></head><body>
+<main class="t" id="main"><a class="back" href="index.html">&larr; Back to store</a><h1>Track your order</h1><p class="sub">Enter your Order ID and the mobile number you used when ordering.</p>
+<form id="tf" class="card" onsubmit="go();return false"><div class="fld"><label for="o">Order ID</label><input id="o" placeholder="DKS-20261006-001" autocomplete="off" required></div>
+<div class="fld"><label for="m">WhatsApp / mobile number</label><input id="m" inputmode="numeric" autocomplete="tel" required></div><button class="btn lg blk" type="submit" id="tb">TRACK</button></form>
+<div id="r" class="res" role="status" aria-live="polite"></div></main>
+<script src="config.js"></script><script>
+const q=new URLSearchParams(location.search);o.value=q.get('track')||'';
+async function api(fn,...args){if(!navigator.onLine)throw new Error('You are offline. Please reconnect to continue.');return(await fetch(DKP_API,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify({fn,args})})).json()}
+const E=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LAB=['','PAYMENT PENDING','PAYMENT VERIFICATION PENDING','PAYMENT VERIFIED - ACCESS APPROVAL PENDING','ACCESS APPROVED'],STEPS=['Order placed','Payment','Verification','Access'];
+async function go(){const b=document.getElementById('tb');r.innerHTML='<div class="card">Loading order...</div>';b.disabled=true;
+ try{const x=await api('getOrderStatus',o.value.trim(),m.value.trim());if(!x.success){r.innerHTML='<div class="msg err" style="margin:0">'+E(x.message||'Order not found.')+'</div>';return}
+  const d=x.data,cur=d.access==='APPROVED'?4:d.payment==='PAID'?3:d.payment==='RECEIPT_SUBMITTED'?2:1;let h='<div class="card"><h2>'+E(d.title)+'</h2>';
+  if(d.payment==='REJECTED')h+='<div class="msg err" style="margin-top:12px">Payment could not be verified. Please contact support.</div>';
+  else h+='<p class="lbl2">'+LAB[cur]+'</p><ol class="tlv" aria-label="Order progress">'+STEPS.map((n,i)=>'<li class="'+(i<cur?'ok':i===cur?'on':'')+'">'+n+'</li>').join('')+'</ol>';
+  h+='</div>';
+  if(d.trackingNo||d.trackingUrl)h+='<div class="card">'+E(d.courier)+' '+E(d.trackingNo)+(/^https:\/\//.test(d.trackingUrl)?' <a href="'+E(d.trackingUrl)+'">Track shipment</a>':'')+'</div>';
+  if(d.payment==='PAID'&&d.type!=='PHYSICAL'){const z=await api('getDownload',o.value.trim(),m.value.trim());if(z.success&&/^https:\/\//.test(z.data.url))h+='<div class="card"><a class="btn lg blk" href="'+E(z.data.url)+'" rel="noopener">Download / Access your product</a></div>'}
+  r.innerHTML=h}catch(e){r.innerHTML='<div class="msg err" style="margin:0">'+E(e.message||'Something went wrong. Please try again.')+'</div>'}finally{b.disabled=false}}
+(async()=>{try{const x=await api('getLanding');if(x.success&&x.data.store.brand){const R=document.documentElement.style,h=x.data.store.brand,n=parseInt(h.slice(1),16),f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};R.setProperty('--ac',h);R.setProperty('--on-ac',(.2126*f(n>>16&255)+.7152*f(n>>8&255)+.0722*f(n&255))>.5?'#101828':'#fff')}}catch(e){}})();
+if(o.value)m.focus();if('serviceWorker'in navigator)navigator.serviceWorker.register('service-worker.js');
+</script></body></html>

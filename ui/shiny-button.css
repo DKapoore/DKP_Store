@@ -1,0 +1,17 @@
+/* ShinyButton — vanilla CSS port (this project is static HTML, not React).
+   Usage: <a class="btn shiny" href="#buy">Buy now</a>   (use on 1-2 primary CTAs only)
+   Reads --ac (brand) and --on-ac (text colour on brand). Animation is skipped for
+   reduced-motion users, and browsers without @property simply show a static border. */
+@property --sh-angle{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes sh-spin{to{--sh-angle:360deg}}
+@keyframes sh-sweep{0%{transform:translateX(-130%) skewX(-20deg)}55%,100%{transform:translateX(330%) skewX(-20deg)}}
+.shiny{position:relative;isolation:isolate;overflow:hidden;color:var(--on-ac,#fff);
+  border:2px solid transparent;
+  background:linear-gradient(var(--ac),var(--ac)) padding-box,
+    conic-gradient(from var(--sh-angle),color-mix(in srgb,var(--ac) 70%,#000) 0 55%,color-mix(in srgb,var(--ac) 30%,#fff) 78%,color-mix(in srgb,var(--ac) 70%,#000) 100%) border-box;
+  animation:sh-spin 3.4s linear infinite;
+  box-shadow:0 6px 18px -6px color-mix(in srgb,var(--ac) 70%,transparent)}
+.shiny::after{content:"";position:absolute;top:0;bottom:0;left:0;width:35%;z-index:-1;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.3),transparent);animation:sh-sweep 4s ease-in-out infinite}
+.shiny:hover{filter:brightness(1.06)}
+@media(prefers-reduced-motion:reduce){.shiny,.shiny::after{animation:none}.shiny::after{display:none}}
